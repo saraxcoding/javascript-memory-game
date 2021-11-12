@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'images/blank.png')
             card.setAttribute('data-id', i)
-            card.addEventListener('click', flipcCard)
+            card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     } 
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //flip your card
-    function flipcard() {
+    function flipCard() {
         var cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name)
         cardsChosenId.push(cardId)
